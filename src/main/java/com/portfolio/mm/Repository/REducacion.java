@@ -1,4 +1,4 @@
-package com.portfolio.mm.Security.Repository;
+package com.portfolio.mm.Repository;
 
 import com.portfolio.mm.Entity.Educacion;
 import java.util.Optional;

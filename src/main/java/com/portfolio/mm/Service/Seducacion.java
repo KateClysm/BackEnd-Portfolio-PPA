@@ -1,7 +1,7 @@
 package com.portfolio.mm.Service;
 
 import com.portfolio.mm.Entity.Educacion;
-import com.portfolio.mm.Security.Repository.REducacion;
+import com.portfolio.mm.Repository.REducacion;
 import java.util.List;
 import java.util.Optional;
 import javax.transaction.Transactional;
@@ -23,7 +23,7 @@ public class Seducacion {
         return rEducacion.findById(id);
     }
     
-    public Optional<Educacion> getByNmbreE(String nombreE){
+    public Optional<Educacion> getByNombreE(String nombreE){
         return rEducacion.findByNombreE(nombreE);
     }
     
