@@ -14,7 +14,7 @@
     <name>mm</name>
     <description>Portfolio Maria Monchot</description>
     <properties>
-        <java.version>1.8</java.version>
+        <java.version>19</java.version>
     </properties>
     <dependencies>
         <dependency>
