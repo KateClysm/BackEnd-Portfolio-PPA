@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://portfoliomariamonchot.web.app"})
 //Agregar antes del localhot al linkdel front end y separarlos por una coma luego. 
 public class AuthController {
     @Autowired
