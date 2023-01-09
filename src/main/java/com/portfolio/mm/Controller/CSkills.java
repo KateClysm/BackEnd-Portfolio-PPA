@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"http://localhost:4200", "https://portfoliomariamonchot.web.app"})
 //Agregar antes del localhot al linkdel front end y separarlos por una coma luego. 
 @RequestMapping("/skill")
 public class CSkills {
