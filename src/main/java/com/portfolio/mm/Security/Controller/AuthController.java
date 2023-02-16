@@ -28,10 +28,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
+/*@CrossOrigin(origins = {"http://localhost:4200", "https://portfoliomariamonchot.web.app"})*/
+
+
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin(origins = {"http://localhost:4200", "https://portfoliomariamonchot.web.app"})
-//Agregar antes del localhot al linkdel front end y separarlos por una coma luego. 
 public class AuthController {
     @Autowired
     PasswordEncoder passwordEncoder;
@@ -87,4 +91,5 @@ public class AuthController {
         
         return new ResponseEntity(jwtDto, HttpStatus.OK);
     }
+    
 }

@@ -32,6 +32,5 @@ public class ImpPersonaService implements IPersonaService{
     public Persona findPersona(Long id) {
         Persona persona = ipersonaRepository.findById(id).orElse(null);
         return persona;
-    }
-    
+    }    
 }

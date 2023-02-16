@@ -11,7 +11,7 @@ public interface IPersonaService {
     //Guardar un objeto de tipo Persona
     public void savePersona(Persona persona);
     
-    //Eliminar un objeto pero lo buscamos por ID
+    //Eliminar un objeto buscandolo por ID
     public void deletePersona(Long id);
     
     //Buscar una persona por ID
