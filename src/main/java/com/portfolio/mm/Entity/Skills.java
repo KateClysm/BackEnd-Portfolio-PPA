@@ -11,13 +11,17 @@ public class Skills {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombre;
+    private String nombreS;
+    private String descripcionS;
+    private String imgS;
 
     public Skills() {
     }
-    
-    public Skills(String nombre) {
-        this.nombre = nombre;
+
+    public Skills(String nombreS, String descripcionS, String imgS) {
+        this.nombreS = nombreS;
+        this.descripcionS = descripcionS;
+        this.imgS = imgS;
     }
 
     public int getId() {
@@ -28,13 +32,29 @@ public class Skills {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreS() {
+        return nombreS;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreS(String nombreS) {
+        this.nombreS = nombreS;
     }
 
+    public String getDescripcionS() {
+        return descripcionS;
+    }
+
+    public void setDescripcionS(String descripcionS) {
+        this.descripcionS = descripcionS;
+    }
+
+    public String getImgS() {
+        return imgS;
+    }
+
+    public void setImgS(String imgS) {
+        this.imgS = imgS;
+    }
+    
     
 }

@@ -19,10 +19,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
-@RestController
-@CrossOrigin(origins = {"http://localhost:4200", "https://portfoliomariamonchot.web.app"})
+//@CrossOrigin(origins = {"http://localhost:4200", "https://portfoliomariamonchot.web.app"})//
 //Agregar antes del localhot al linkdel front end y separarlos por una coma luego. 
+@RestController
+@CrossOrigin(origins = {"http://localhost:4200"})
 @RequestMapping("/skill")
 public class CSkills {
 
@@ -55,12 +55,12 @@ public class CSkills {
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoSkills dtoskills){      
-        if(StringUtils.isBlank(dtoskills.getNombre()))
+        if(StringUtils.isBlank(dtoskills.getNombreS()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
-        if(sskills.existsByNombre(dtoskills.getNombre()))
+        if(sskills.existsByNombreS(dtoskills.getNombreS()))
             return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
         
-        Skills sKills = new Skills(dtoskills.getNombre());
+        Skills sKills = new Skills(dtoskills.getNombreS(),dtoskills.getDescripcionS(), dtoskills.getImgS());
         sskills.save(sKills);
         
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
@@ -72,14 +72,16 @@ public class CSkills {
         if(!sskills.existsById(id))
             return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.BAD_REQUEST);
         //Compara nombre de experiencias
-        if(sskills.existsByNombre(dtoskills.getNombre()) && sskills.getByNombre(dtoskills.getNombre()).get().getId() != id)
+        if(sskills.existsByNombreS(dtoskills.getNombreS()) && sskills.getByNombreS(dtoskills.getNombreS()).get().getId() != id)
             return new ResponseEntity(new Mensaje("Esa skill ya existe"), HttpStatus.BAD_REQUEST);
         //No puede estar vacio
-        if(StringUtils.isBlank(dtoskills.getNombre()))
+        if(StringUtils.isBlank(dtoskills.getNombreS()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
         Skills sKills = sskills.getOne(id).get();
-        sKills.setNombre(dtoskills.getNombre());
+        sKills.setNombreS(dtoskills.getNombreS());
+        sKills.setDescripcionS(dtoskills.getDescripcionS());
+        sKills.setImgS(dtoskills.getImgS());
         
         sskills.save(sKills);
         return new ResponseEntity(new Mensaje("Skill actualizada"), HttpStatus.OK);        

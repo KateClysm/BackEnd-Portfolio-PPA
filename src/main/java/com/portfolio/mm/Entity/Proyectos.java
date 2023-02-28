@@ -18,7 +18,6 @@ public class Proyectos {
     private String imgP;
     
     //Constructores
-
     public Proyectos() {
     }
 
@@ -85,7 +84,5 @@ public class Proyectos {
 
     public void setImgP(String imgP) {
         this.imgP = imgP;
-    }
-    
-    
+    }     
 }

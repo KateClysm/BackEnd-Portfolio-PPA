@@ -62,7 +62,8 @@ public class CProyectos {
         }
         
         Proyectos proyectos = new Proyectos(
-                dtoproyectos.getNombreP(), dtoproyectos.getDescripcionP(), dtoproyectos.getFechaP(), dtoproyectos.getLinkP(), dtoproyectos.getGitP(), dtoproyectos.getImgP());
+                dtoproyectos.getNombreP(), dtoproyectos.getDescripcionP(), dtoproyectos.getFechaP(),
+                dtoproyectos.getLinkP(), dtoproyectos.getGitP(), dtoproyectos.getImgP());
         sProyectos.save(proyectos);
         return new ResponseEntity(new Mensaje("Proyecto Creado"), HttpStatus.OK);
                 

@@ -23,8 +23,8 @@ public class SSkills {
         return rskills.findById(id);
     }
     
-    public Optional<Skills> getByNombre(String nombre){
-        return rskills.findByNombre(nombre);
+    public Optional<Skills> getByNombreS(String nombreS){
+        return rskills.findByNombreS(nombreS);
     }
     
     public void save(Skills skill){
@@ -39,7 +39,7 @@ public class SSkills {
         return rskills.existsById(id);
     }
     
-    public boolean existsByNombre(String nombre){
-        return rskills.existsByNombre(nombre);
+    public boolean existsByNombreS(String nombreS){
+        return rskills.existsByNombreS(nombreS);
     }
 }
