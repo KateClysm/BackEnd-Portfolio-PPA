@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Proyectos {
@@ -15,6 +16,8 @@ public class Proyectos {
     private String fechaP;
     private String linkP;
     private String gitP;
+    
+    @Size(min = 1, max = 100, message = "no cumple con la longitud")
     private String imgP;
     
     //Constructores
