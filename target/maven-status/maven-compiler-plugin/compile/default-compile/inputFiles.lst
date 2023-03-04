@@ -6,7 +6,9 @@ C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Repository\iUsuarioRepository.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\jwt\JwtTokenFilter.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Repository\RSkills.java
+C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Dto\dtoProyectos.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\WebConfig.java
+C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Controller\CProyectos.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Entity\Rol.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\jwt\JwtProvider.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Repository\iRolRepository.java
@@ -18,12 +20,14 @@ C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Service\RolService.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Entity\UsuarioPrincipal.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Entity\Persona.java
+C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Entity\Proyectos.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Entity\Skills.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Dto\dtoPersona.java
-C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Interface\IPersonaService.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Service\ImpPersonaService.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Repository\RExperiencia.java
+C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Repository\RProyectos.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Security\Entity\Usuario.java
+C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Service\SProyectos.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Entity\Experiencia.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Controller\CExperiencia.java
 C:\Users\Katerina\Desktop\Proyecto Portfolio PPA\BackEnd-Portfolio-PPA\src\main\java\com\portfolio\mm\Entity\Educacion.java
