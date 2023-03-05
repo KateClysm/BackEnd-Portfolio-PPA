@@ -4,14 +4,16 @@ import javax.validation.constraints.NotBlank;
 
 
 public class dtoPersona {
+    private String img; 
+    
     @NotBlank
     private String nombre;
     @NotBlank
     private String apellido;
     @NotBlank
     private String titulo;
-    @NotBlank
-    private String img;    
+  
+       
 
     public dtoPersona() {
     }
