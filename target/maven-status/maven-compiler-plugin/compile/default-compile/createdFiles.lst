@@ -34,6 +34,7 @@ com\portfolio\mm\Security\Dto\JwtDto.class
 com\portfolio\mm\Controller\CProyectos.class
 com\portfolio\mm\Security\Dto\NuevoUsuario.class
 com\portfolio\mm\Security\Entity\Rol.class
+com\portfolio\mm\Interface\IPersonaService.class
 com\portfolio\mm\Security\jwt\JwtEntryPoint.class
 com\portfolio\mm\Repository\IPersonaRepository.class
 com\portfolio\mm\Dto\dtoSkills.class
